@@ -1,0 +1,75 @@
+.modal-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.modal {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 600px;
+	height: 400px;
+	padding: 30px 20px 0 60px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border-radius: 20px;
+	font-size: 24px;
+	color: #666666;
+
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		text-align: center;
+		color: black;
+	}
+
+	&__info {
+		width: 100%;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 170px;
+		height: 50px;
+		background: #2196f3;
+		color: #fff;
+		border-radius: 20px;
+		cursor: pointer;
+		outline: none;
+		border: none;
+	}
+
+	&__button:hover {
+		background: #0070cc;
+	}
+}
+
+.total_confirmed_icon::before {
+	content: url("../../img/heartbeat.svg");
+	position: absolute;
+	left: -40px;
+}
+
+.total_death_icon::before {
+	content: url("../../img/skull.svg");
+	position: absolute;
+	left: -40px;
+}
+
+.total_recovered_icon::before {
+	content: url("../../img/file-medical.svg");
+	position: absolute;
+	left: -40px;
+}

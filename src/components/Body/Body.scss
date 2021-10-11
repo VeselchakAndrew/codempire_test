@@ -1,0 +1,60 @@
+.body {
+	&__item,
+	&__title {
+		display: flex;
+		align-items: center;
+		height: 60px;
+		font-size: 18px;
+		font-weight: 700;
+		border: 1px solid black;
+		border-radius: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__item:hover {
+		background-color: #2196f3;
+		border: 1px solid #2196f3;
+		color: #fff;
+		transition: 0.3s ease;
+		cursor: pointer;
+	}
+
+	&__title {
+		border: 1px solid #2196f3;
+		background-color: #2196f3;
+		color: #fff;
+	}
+
+	&__number,
+	&__country,
+	&__total {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		margin-left: 30px;
+	}
+
+	&__number {
+		width: 90px;
+		border-right: 2px solid black;
+	}
+
+	&__country {
+		width: 540px;
+		border-right: 2px solid black;
+	}
+
+	&__total {
+		width: 270px;
+	}
+
+	&__item:hover &__number,
+	&__item:hover &__country {
+		border-right: 2px solid #fff;
+	}
+
+	&__title > &__number,
+	&__title > &__country {
+		border-right: 2px solid #fff;
+	}
+}

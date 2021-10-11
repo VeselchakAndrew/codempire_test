@@ -1,0 +1,29 @@
+.search-bar {
+	width: 300px;
+	height: 40px;
+	border: 2px solid rgb(134, 134, 134);
+	border-radius: 20px;
+	padding-left: 20px;
+	outline: none;
+
+	&:focus {
+		border-color: #2196f3;
+	}
+
+	&:focus::placeholder {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+}
+
+.form_div {
+	position: relative;
+}
+
+.search_icon::after {
+	content: url("../../img/search.png");
+	opacity: 0.75;
+	position: absolute;
+	top: 4px;
+	right: 10px;
+}
